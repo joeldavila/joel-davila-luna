@@ -1,0 +1,76 @@
+body{
+    background-color: antiquewhite;
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 10px;
+    margin: 5px;
+    
+}
+
+#about{
+    text-align: center;
+}
+
+#about p{
+    width: 400px;
+}
+
+h1,h2{
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+
+#profile-img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+#experience li{
+    display: block;
+}
+
+#connect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#connect a{
+    
+    text-decoration: none;
+    
+}
+
+#connect li {
+  list-style-type: none;
+}
+
+i{
+    color: black;
+    
+}
+
+#connect ul{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ;
+}
