@@ -13,18 +13,20 @@ body{
 section{
     padding: 10px;
     margin: 5px;
+    text-align: center;
     
 }
 
 #about{
     text-align: center;
+   
 }
 
 #about p{
     width: 400px;
 }
 
-h1,h2{
+h2{
     font-size: 30px;
     font-weight: 800;
     color: black;
@@ -35,13 +37,50 @@ h1{
     color: black;
 }
 
+.strong{
+    font-weight: 900;
+}
+
 #profile-img{
     width: 100px;
     border-radius: 10px;
 }
 
+#experience-group{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 #experience li{
     display: block;
+}
+
+.experience-block{
+    display: flex;
+    flex-direction: column;
+    border: solid rgba(0, 0, 0, 0.228) 2px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+.experience-ul{
+ flex-direction: column;
+ 
 }
 
 #connect{
@@ -68,9 +107,40 @@ i{
 }
 
 #connect ul{
-    width: 200px;
+    width: 400px;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     ;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.609);
+    width: 100vw;
+    
+   
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin:10px;
+    padding: 0;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+nav ul li a:hover{
+    color: aquamarine;
 }
