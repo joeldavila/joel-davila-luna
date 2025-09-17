@@ -1,4 +1,4 @@
-/* desktop-first */
+/* desktop-first I decided to use desktop firts because when I created this website , it was stylized for desktop. I feel that it was going to be easier to add the mobile and smaller screen on media queries. For other projects I will choose mobile first */
 body {
   background-color: antiquewhite;
   color: brown;
@@ -178,7 +178,7 @@ nav ul li a:hover {
   }
 
   nav {
-    background-color: rgb(52, 52, 52);
+    background-color: rgb(75, 111, 174);
     height: 50px;
     width: 100%;
   }
@@ -191,6 +191,12 @@ nav ul li a:hover {
   #profile-img {
     width: 50%;
     border-radius: 20px;
+  }
+
+   .experience-block{
+    background-color: rgb(75, 111, 174);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
   }
 
  
