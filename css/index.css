@@ -1,4 +1,4 @@
-/* desktop-first I decided to use desktop firts because when I created this website , it was stylized for desktop. I feel that it was going to be easier to add the mobile and smaller screen on media queries. For other projects I will choose mobile first */
+/* desktop-first I decided to use desktop first because when I created this website , it was stylized for desktop. I feel that it was going to be easier to add the mobile and smaller screen on media queries. For other projects I will choose mobile first */
 body {
   background-color: antiquewhite;
   color: brown;
@@ -76,7 +76,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
+
 }
 
 .bottom {
@@ -192,6 +192,11 @@ nav ul li a:hover {
   #profile-img {
     width: 50%;
     border-radius: 20px;
+  }
+
+  section p{
+    font-size: 1.5rem;
+    padding: .5rem;
   }
 
    .experience-block{
