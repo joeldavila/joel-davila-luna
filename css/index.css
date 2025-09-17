@@ -1,3 +1,4 @@
+/* desktop-first */
 body {
   background-color: antiquewhite;
   color: brown;
@@ -156,6 +157,17 @@ nav ul li a:hover {
     font-size: 3rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
+
+  #about p{
+    color:black;
+    font-weight: 500;
+  }
+
+   .experience-block{
+    background-color: rgb(71, 188, 77);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+  }
 }
 
 /* Phones */
@@ -180,4 +192,6 @@ nav ul li a:hover {
     width: 50%;
     border-radius: 20px;
   }
+
+ 
 }
