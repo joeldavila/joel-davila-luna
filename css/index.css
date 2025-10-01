@@ -149,7 +149,67 @@ nav ul li a:hover {
   color: aquamarine;
 }
 
+#messages ul li{
+  display: flex;
 
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.609);
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.391);
+}
+
+#messages ul li a{
+  color: rgb(199, 190, 15);
+  margin: 5px;
+}
+
+#messages ul li span{
+  color: white;
+}
+
+button{
+
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+
+}
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  
+}
+#contact input{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.511);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.343);
+}
+
+#contact textarea{
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.343);
+  
+}
+
+#contact button{
+  background-color: rgba(0, 0, 0, 0.333);
+  color: black;
+  padding: 20px;
+}
+
+#contact button:hover{
+  background-color: aliceblue;
+  color:black;
+  cursor: pointer;
+  
+}
 
 
 /* Tablet */
