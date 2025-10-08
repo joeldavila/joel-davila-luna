@@ -115,8 +115,10 @@ i {
   color: black;
 }
 
-#projects ul{
+#projects ul li{
   display: flex;
+  margin: 10px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -124,6 +126,11 @@ i {
   background-color: rgb(0, 0, 0);
   
   
+}
+
+#projects ul{
+  margin: 0;
+  padding: 0;
 }
 
 #projects ul li a {
@@ -153,7 +160,7 @@ nav {
   position: sticky;
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.841);
+  background-color: rgba(0, 0, 0, 0.927);
   width: 100%;
   font-size: 1.5rem;
 }
