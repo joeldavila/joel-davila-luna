@@ -8,7 +8,7 @@ html{
 /* desktop-first I decided to use desktop first because when I created this website , it was stylized for desktop. I feel that it was going to be easier to add the mobile and smaller screen on media queries. For other projects I will choose mobile first */
 body {
   background-color: antiquewhite;
-  color: brown;
+  color: black;
   font-family: "Courier New", Courier, monospace;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ h1 {
 }
 
 #profile-img {
-  width: 30%;
+  width: 16%;
   border-radius: 10px;
 }
 
@@ -115,6 +115,33 @@ i {
   color: black;
 }
 
+#projects ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  
+  
+}
+
+#projects ul li a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+#projects a:hover{
+  color: rgb(29, 123, 140);
+}
+
+
+#projects ul li{
+  list-style: none;
+  
+}
+
 #connect ul {
   width: 400px;
   padding: 0;
@@ -126,8 +153,9 @@ nav {
   position: sticky;
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.609);
+  background-color: rgba(0, 0, 0, 0.841);
   width: 100%;
+  font-size: 1.5rem;
 }
 
 nav ul {
@@ -205,8 +233,8 @@ button{
 }
 
 #contact button:hover{
-  background-color: aliceblue;
-  color:black;
+  background-color: rgb(0, 0, 0);
+  color:white;
   cursor: pointer;
   
 }
@@ -220,24 +248,30 @@ button{
   }
 
   #profile-img {
-    width: 50%;
+    width: 200px;
     border-radius: 20px;
   }
 
   h2{
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
   #about p{
     color:black;
     font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  nav{
+    font-size: 1rem;
   }
 
    .experience-block{
     background-color: rgb(71, 188, 77);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
+    font-size: 1rem;
   }
 }
 
@@ -263,6 +297,7 @@ button{
 
   footer{
     color: black;
+    font-size: 1rem;
   }
 
 

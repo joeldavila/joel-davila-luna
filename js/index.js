@@ -50,9 +50,9 @@ const messageForm = document.querySelector("form[name=leave_message]")
 
 document.addEventListener('submit',(e)=>{
     e.preventDefault()
-    const userName = e.target.userName.value
-    const userEmail = e.target.userEmail.value
-    const userMessage = e.target.userMessage.value
+    const userName = e.target.usersName.value
+    const userEmail = e.target.usersEmail.value
+    const userMessage = e.target.usersMessage.value
 
     console.log(`"userName = ${userName}, "userEmail: ${userEmail},userMessage = ${userMessage}`)
 
@@ -101,4 +101,39 @@ document.addEventListener('submit',(e)=>{
     messageForm.reset()
 })
 
+
+//
+
+fetch("https://api.github.com/users/joeldavila/repos")
+.then((response)=>{
+
+    if(!response.ok){
+        throw new Error("Failed to fetch data")
+    }
+
+    return response.json()
+})
+.then((repositories)=>{
+    // repo = JSON.parse(this.response)
+    console.log(repositories)
+    const projectSection = document.getElementById('projects')
+    
+    const projectList = projectSection.querySelector("ul")
+    projectList.innerHTML = ""
+
+    repositories.forEach(repo =>{
+        const project = document.createElement("li")
+        const projectLink = document.createElement("a")
+        projectLink.href = repo.html_url;
+        projectLink.textContent = repo.name;
+
+        //Filter fork repo
+
+        project.appendChild(projectLink)
+        projectList.appendChild(project)
+    })
+})
+.catch((error)=>{
+    console.error("Erorr fetching error",error);
+})
 
