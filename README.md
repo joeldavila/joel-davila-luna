@@ -23,5 +23,5 @@ It showcases my professional background, skills, and projects as I transition fr
    ```bash
    git clone https://github.com/joeldavila/joel-davila-luna
 
-Below is my other project link - open-pi
+Below is my other project link - open-api weather app
 (https://github.com/joeldavila/joeldavila-open-api)
