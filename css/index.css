@@ -1,14 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-html{
+a {
+  color: white;
+}
+
+html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+#connect ul li a i:hover {
+  font-size: 40px;
+}
+
 /* desktop-first I decided to use desktop first because when I created this website , it was stylized for desktop. I feel that it was going to be easier to add the mobile and smaller screen on media queries. For other projects I will choose mobile first */
 body {
-  background-color: antiquewhite;
-  color: brown;
+  background-color: rgb(255, 255, 255);
+  color: black;
   font-family: "Courier New", Courier, monospace;
   display: flex;
   justify-content: center;
@@ -18,8 +31,88 @@ body {
   margin: 0 auto;
 }
 
+#message-form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  max-width: 700px;
+  padding: 50px;
+  background-color: rgba(36, 37, 74, 0.866);
+  color: white;
+  border-radius: 20px;
+}
+
+#message-form h2 {
+  color: white;
+}
+
+#contact button {
+  color: black;
+  background-color: white;
+}
+
+#messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#messages span {
+  padding: 10px;
+}
+
+#messages ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  max-width: 700px;
+  padding: 0;
+}
+#messages ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgba(36, 37, 74, 0.866);
+  width: 100%;
+}
+
+.message-button {
+  color: black;
+  width: 100px;
+  padding: 10px;
+}
+
+#top-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  max-width: 950px;
+  background-color: rgba(36, 37, 74, 0.866);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile h1 {
+  padding: 0;
+  margin: 0;
+}
+
 p {
   font-size: 1.5em;
+  color: white;
 }
 
 section {
@@ -29,11 +122,20 @@ section {
 }
 
 #about {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 #about p {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+}
+
+#about h2 {
+  color: white;
 }
 
 h2 {
@@ -44,7 +146,7 @@ h2 {
 
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: black;
+  color: white;
 }
 
 .strong {
@@ -52,7 +154,7 @@ h1 {
 }
 
 #profile-img {
-  width: 30%;
+  width: 50%;
   border-radius: 10px;
 }
 
@@ -64,6 +166,7 @@ h1 {
 
 #experience li {
   display: block;
+  background-color: rgba(36, 37, 74, 0.866);
 }
 
 #experience {
@@ -74,16 +177,16 @@ h1 {
 .experience-block {
   display: flex;
   flex-direction: column;
-  border: solid rgba(0, 0, 0, 0.228) 2px;
+
   padding: 15px;
   border-radius: 10px;
+  background-color: rgba(36, 37, 74, 0.866);
 }
 
 .top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
 .bottom {
@@ -115,6 +218,31 @@ i {
   color: black;
 }
 
+#projects ul li {
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(36, 37, 74, 0.866);
+}
+
+#projects ul {
+  margin: 0;
+  padding: 0;
+}
+
+#projects ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#projects ul li {
+  list-style: none;
+}
+
 #connect ul {
   width: 400px;
   padding: 0;
@@ -126,8 +254,9 @@ nav {
   position: sticky;
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.609);
+  background-color: rgb(36, 37, 74);
   width: 100%;
+  font-size: 1.5rem;
 }
 
 nav ul {
@@ -146,14 +275,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: aquamarine;
+  color: rgb(122, 104, 200);
 }
 
-#messages ul li{
+#messages ul li {
   display: flex;
 
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.609);
+  background-color: rgba(36, 37, 74, 0.866);
   list-style: none;
   margin: 10px;
   padding: 10px;
@@ -161,87 +290,166 @@ nav ul li a:hover {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.391);
 }
 
-#messages ul li a{
-  color: rgb(199, 190, 15);
-  margin: 5px;
-}
-
-#messages ul li span{
+#messages ul li span {
   color: white;
 }
 
-button{
-
+button {
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
   border: none;
-
 }
 
-#contact{
+button:hover {
+  cursor: pointer;
+  background-color: rgba(31, 32, 63, 0.866);
+  color: white;
+}
+
+#contact {
   display: flex;
   flex-direction: column;
-  
 }
-#contact input{
+#contact input {
   padding: 10px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.511);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.343);
 }
 
-#contact textarea{
+#contact textarea {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.343);
-  
 }
 
-#contact button{
-  background-color: rgba(0, 0, 0, 0.333);
+#contact button {
+  background-color: white;
   color: black;
   padding: 20px;
 }
 
-#contact button:hover{
-  background-color: aliceblue;
-  color:black;
+#contact button:hover {
   cursor: pointer;
-  
+  background-color: rgba(31, 32, 63, 0.866);
+  color: white;
 }
-
 
 /* Tablet */
 @media (max-width: 768px) {
+  #top-group {
+    flex-direction: column;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  #about {
+    border-radius: 20;
+  }
+
+  #profile h1 {
+    color: black;
+  }
+
   body {
-    background-color: lightgreen;
+    background-color: white;
     font-size: 1.4rem;
   }
 
   #profile-img {
-    width: 50%;
+    width: 200px;
     border-radius: 20px;
   }
 
-  h2{
-    font-size: 3rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  h2 {
+    font-size: 2rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
   }
 
-  #about p{
-    color:black;
-    font-weight: 500;
+  #about {
+    width: 100%;
+    padding: 0;
   }
 
-   .experience-block{
-    background-color: rgb(71, 188, 77);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  .about-text {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(36, 37, 74, 0.866);
+    border-radius: 20px;
+    padding: 10px;
+
+    width: 100%;
+  }
+
+  #messages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #messages span {
+    padding: 10px;
+  }
+
+  #messages ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  #messages ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(36, 37, 74, 0.866);
+    width: 100%;
+  }
+  #message-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(36, 37, 74, 0.866);
+    color: white;
+    border-radius: 0px;
+  }
+
+  .message-button {
     color: black;
+    width: 100px;
+    padding: 10px;
+  }
+
+  #about p {
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  #contact button {
+    color: black;
+    background-color: white;
+  }
+
+  nav {
+    font-size: 1rem;
+  }
+
+  .experience-block {
+    background-color: rgba(36, 37, 74, 0.866);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 1rem;
   }
 }
 
-#skills ul{
+#skills ul {
   display: flex;
   list-style: none;
   align-items: center;
@@ -250,68 +458,158 @@ button{
   flex-wrap: wrap;
 }
 
-#skills ul li{
+#skills ul li {
+  text-align: center;
   margin: 30px;
   padding: 20px;
-   background-color: rgb(0, 0, 0);
-   border: solid black 1px;
+  background-color: rgba(36, 37, 74, 0.866);
+  border: solid black 1px;
   color: white;
-  width: 150px;
+  width: 200px;
   border-radius: 10px;
 }
 
-
-  footer{
-    color: black;
-  }
-
-
-
-
-
-
+footer {
+  color: black;
+  font-size: 1rem;
+}
 
 /* Phones */
 @media (max-width: 480px) {
-
-
   body {
-    background-color: lightblue;
+    background-color: white;
     font-size: 1.2rem;
+  }
 
+  #about {
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 
   nav {
-    background-color: rgb(75, 111, 174);
-    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(35, 37, 70);
+    margin: 0;
+    padding: 0;
     width: 100%;
   }
 
   nav ul {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    margin: 0;
+    width: 100%;
     justify-content: space-evenly;
   }
 
+  nav ul li {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.109);
+  }
+
   #profile-img {
-    width: 50%;
     border-radius: 20px;
   }
 
-  section p{
+  section p {
     font-size: 1.5rem;
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
-   .experience-block{
-    background-color: rgb(75, 111, 174);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  #experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .experience-block {
+    background-color: rgba(36, 37, 74, 0.866);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: white;
   }
 
-  #skills ul{
+  #skills ul {
     display: flex;
     flex-direction: column;
   }
 
- 
+  #connect {
+    width: 100%;
+  }
+
+  #message-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(36, 37, 74, 0.866);
+    color: white;
+    border-radius: 0px;
+  }
+
+  #message-form h2 {
+    color: white;
+  }
+
+  #contact button {
+    color: black;
+    background-color: white;
+  }
+
+  #messages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #messages span {
+    padding: 10px;
+  }
+
+  #messages ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  #messages ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(36, 37, 74, 0.866);
+    width: 100%;
+  }
+
+  .message-button {
+    color: black;
+    width: 100px;
+    padding: 10px;
+  }
+
+  #projects ul li {
+    background-color: rgba(36, 37, 74, 0.866);
+  }
+
+  .about-text {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(36, 37, 74, 0.866);
+
+    width: 100%;
+  }
+
+  #skills ul li {
+    background-color: rgba(36, 37, 74, 0.866);
+  }
 }
